@@ -23,6 +23,8 @@ class MemberRepositoryTest {
 
     @Test
     public void testMember() {
+        // 가짜 class 생성 후 주입하는 것
+        System.out.println("memberRepository = " + memberRepository.getClass());
         Member member = new Member("memberA");
         Member savedMember = memberRepository.save(member);
 
